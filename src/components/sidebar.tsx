@@ -1,4 +1,4 @@
-import { LayoutDashboard } from 'lucide-react';
+import { ArrowUpDown, LayoutDashboard, Plus, Settings } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
 export function SideBar() {
@@ -7,18 +7,30 @@ export function SideBar() {
       <div>
         <img className="w-36" src="/logo.svg" alt="" />
       </div>
-      <nav className="flex flex-col gap-6 mt-6">
-        <NavLink to="/" className="flex items-center gap-1">
+      <nav className="flex flex-col gap-4 mt-6">
+        <NavLink to="/" className="flex items-center gap-1  hover:bg-neutral-100 p-2 rounded-md">
           <LayoutDashboard className="w-5 h-5" />
           <span>Dashboard</span>
         </NavLink>
-        <NavLink to="/my-credits">
+        <NavLink
+          to="/my-credits"
+          className="flex items-center gap-1 hover:bg-neutral-100 p-2 rounded-md"
+        >
+          <ArrowUpDown className="w-5 h-5" />
           <span>Meus Creditos</span>
         </NavLink>
-        <NavLink to="/new-credit">
+        <NavLink
+          to="/new-credit"
+          className="flex items-center gap-1  hover:bg-neutral-100 p-2 rounded-md"
+        >
+          <Plus className="w-5 h-5" />
           <span>Solicitar Credito</span>
         </NavLink>
-        <NavLink to="/settings">
+        <NavLink
+          to="/settings"
+          className="flex items-center gap-1  hover:bg-neutral-100 p-2 rounded-md"
+        >
+          <Settings className="w-5 h-5 " />
           <span>Configurações</span>
         </NavLink>
       </nav>
