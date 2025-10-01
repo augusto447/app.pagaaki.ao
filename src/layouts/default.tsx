@@ -1,6 +1,6 @@
-import { Outlet } from "react-router-dom";
-import { SideBar } from "../components/sidebar";
-import { Header } from "../components/header";
+import { Outlet } from 'react-router-dom';
+import { SideBar } from '../components/sidebar';
+import { Header } from '../components/header';
 
 export function DefaultLayout() {
   return (
