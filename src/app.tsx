@@ -1,6 +1,12 @@
 import { RouterProvider } from 'react-router-dom'
+import { Toaster } from 'sonner'
 import { routes } from './routes'
 
 export function App() {
-  return <RouterProvider router={routes} />
+  return (
+    <div>
+      <RouterProvider router={routes} />
+      <Toaster richColors />
+    </div>
+  )
 }
